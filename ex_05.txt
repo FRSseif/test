@@ -1,0 +1,3 @@
+"<a class='gotoLine' href='#41:8'>41:8</a> Erreur de syntaxe non interceptée : identifiant inattendu 'Code'"
+>_
+
