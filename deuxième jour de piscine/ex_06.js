@@ -4,6 +4,6 @@ if  (bananasCount>0){
 else if (bananasCount==0){
     displayThisText ("Oh no there is no banana.")
 }
-else if (bananasCount<0){
+else {
     displayThisText ("Do i owe you bananas")
 }
