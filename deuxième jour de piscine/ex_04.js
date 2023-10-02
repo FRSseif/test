@@ -1,0 +1,7 @@
+displayThisText (typeof 45)
+displayThisText (typeof null)
+displayThisText (typeof 878787875n)
+displayThisText (typeof true)
+displayThisText (typeof x)
+displayThisText (typeof displayThisText)
+displayThisText (typeof Symbol())
