@@ -1,4 +1,4 @@
-fruits = ["Blackberries", "Mango", "Kiwi", "Peaches", "Strawberry"];
+
 
 function getFruit(paramater) {
     if (typeof paramater === 'string') {
@@ -10,6 +10,3 @@ function getFruit(paramater) {
     }
     return null;
 }
-let inputPar = "Mango";
-let result = getFruit(inputPar);
-displayResult(result);
