@@ -1,5 +1,3 @@
-fruits = ["Blackberries", "Apple", "Banana", "Mango", "Peaches", "Kiwi"];
-let index = 9
 
 function getFruitNameFromIndex(index) {
 
@@ -17,4 +15,5 @@ function getFruitNameFromIndex(index) {
         return fruits[index];
     }
 }
-displayResult(getFruitNameFromIndex(index))
+
+
