@@ -1,0 +1,157 @@
+h1, h2, h3, h5, h6, span{
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+}
+p {
+    font-family: "Arial", sans-serif;
+    color: dimgray;
+    font-size: x-small;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e67e22;
+}
+
+.subtitle{
+    font-family: 'Times New Roman', Times, serif;
+}
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: darkgray;
+    font-size: xx-small;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px ;
+}
+
+
+.grid-bg {
+    background-image: url("./grille.png");
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 200px;
+}
+
+#main-ct {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.centred-text {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-30%, -30%);
+    color: white;
+}
+
+#header-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#header-img{
+    margin: auto 0;
+}
+
+.ruler {
+    width: 150%;
+    height: 5px;
+}
+.youtube-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.youtube {
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+}
+
+#golf{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    text-align: left;
+    justify-content: center;
+}
+
+#golf2{
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+#Accrobranche {
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+#Commentaires {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    .accro{
+        margin-right: 5px;
+        margin-top: 5px;
+        border: 1px solid aliceblue;
+        padding: 8px;
+    }
+}
+#Fast\ food {
+    margin-top: 20px
+}
+.service {
+    background-image: url('./grille.png');
+    background-position: center;
+    text-align: center;
+    padding: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+#footer-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#footer-img{
+    margin: 10;
+}
+
+#credits {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
