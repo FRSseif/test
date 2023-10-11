@@ -1,20 +1,21 @@
+let currentRotation = 0;
 function rotateCircle(step) {
+    currentRotation += step;
     let circle = document.getElementById("circle");
-    let currentRotation = circle.style.transform;
-    let currentAngle = 0;
-    if (currentRotation) {
-        let matches = currentRotation.match(/rotate\((-?\d+)deg\)/);
-        if (matches && matches.length > 1) {
-            currentAngle = parseInt(matches[1]);
-        }
-    }
-    let newAngle = currentAngle + step;
-    circle.style.transform = "rotate(" + newAngle + "deg)";
+    circle.style.transform = `rotate(${currentRotation}deg)`;
 }
-let buttons = document.getElementsByClassName("top-button");
+function reset() {
+    let circle = document.getElementById("circle");
+    circle.style.transform = "rotate(0deg)";
+    currentRotation = 0;  // Reset currentRotation to 0
+}
+let buttons = document.getElementsByClassName('rotate-button');
 for (let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener("click", function(event) {
-        let step = parseInt(event.target.dataset.step);
-        rotateCircle(step);
-    });
+    buttons[i].addEventListener('click', function() {
+        if (this.value === '0') {
+            reset();
+        } else {
+            rotateCircle(parseInt(this.value));
+        }
+    })
 }
