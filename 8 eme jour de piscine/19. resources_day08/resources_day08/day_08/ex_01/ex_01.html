@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 01</title>
+    <link rel="stylesheet" href="ex_01.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+</head>
+<body>
+<section class="splide" aria-label="Splide Basic HTML Example">
+    <div class="splide__track">
+        <ul class="splide__list">
+            <li class="splide__slide"><img src="poney1.jpg"></li>
+            <li class="splide__slide"><img src="poney2.jpg"></li>
+            <li class="splide__slide"><img src="poney3.jpg"></li>
+        </ul>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script>
+    document.addEventListener( 'DOMContentLoaded', function() {
+        var splide = new Splide( '.splide' ,{
+            width: '70%',
+            start: 1,
+            gap: '10px',
+            type: 'loop',
+            autoplay: 'true',
+            interval: '5000',
+        });
+        splide.mount();
+    } );
+</script>
+</body>
+</html>
