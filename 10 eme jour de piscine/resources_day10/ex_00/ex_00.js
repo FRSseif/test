@@ -4,7 +4,6 @@ async function asyncFunc() {
     });
 }
 
-// Call the asyncFunc and display the Promise in the console
 asyncFunc().then((result) => {
     console.log(result);
 });
