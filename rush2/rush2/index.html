@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>site trop guez</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="aea.js"></script>
+    <script src="js/suggestions.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo"><img src="logo.png" alt="logo"></div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="#">HOME</a></li>
+        <li><a href="#">SHOP</a></li>
+        <li><a href="#">MAGAZINE</a></li>
+        <li><a href="#">LOGIN</a></li>
+        <li><a href="#"><img src="panier.svg" alt="panier"></a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <div class="search-input"> 
+        <a href="" target="_blank" hidden></a>
+        <input type="text" placeholder="Type to search.." alt="type to search">
+        <div class="autocom-box">
+        </div>
+        <div class="icon"><i class="fas fa-search"></i></div>
+      </div>
+    </div>
+      </label>
+      <main>
+        <section class="grid-container">
+          <div class="grid-item">
+            <!--Les filtres: -->
+            <div class="filter-container">
+              <h5 id="gang">Filtrer par</h5>
+              <div class="filters">
+                <div class="left"> <h5>Collection</h5></div>
+                <div class="right2"><img src="roll.png" alt="bouton déroulant"></div>
+              </div>
+              <div class="filters">
+                <div class="left"> <h5>Couleur</h5></div>
+                <div class="right2"><img src="roll.png" alt="bouton déroulant"></div>
+              </div>
+              <div class="filters">
+                <div class="left"> <h5>Catégories</h5></div>
+                <div class="right2"><img src="roll.png" alt="bouton déroulant"></div>
+              </div>
+              <div class="price-range-container">
+                <!--price range -->
+                <div class="left5"><h5>Echelle de prix</h5></div>
+                <span id="priceValue"></span>
+                <input type="range" min="0" max="100" value="50" class="slider" id="priceRange">
+                <div class="filters2"><div class="left"> <h5>0€</h5></div>
+                  <div class="right"><h5>300.00€+</h5></div></div>
+              </div>
+            </div>
+          </div><!--paire 1 -->
+          <div class="grid-item">
+            <img src="ADIDAS%20BLEU.jpg" alt="Adidas" class="main-image"> <br>
+            <div class="grid">
+              <div class="left">
+                <h4>Adidas Originals Forum Low</h4>
+                <h6>Sneakers</h6>
+                <h4>★★★★☆</h4>
+              </div>
+              <div class="right">
+                <h4>64.00€</h4>
+                <img src="addtocart.png" alt="add to cart">
+              </div>
+            </div>
+          </div>
+          <div class="grid-item"> <!--paire 2 -->
+            <img src="NIKE%20BLANCHE.webp" alt="Nike" class="main-image"> <br>
+            <div class="grid">
+              <div class="left">
+                <h4>Air Force One</h4>
+                <h6>Sneakers</h6>
+                <h4>★★★★★</h4>
+              </div>
+              <div class="right">
+                <h4>119.99€</h4>
+                <img src="addtocart.png" alt="add to cart">
+              </div>
+            </div>
+          </div>
+          <div class="grid-item"> <!--paire 3 -->
+            <img src="JORDAN%20MARRON.webp" alt="Jordan" class="main-image"> <br>
+            <div class="grid">
+              <div class="left">
+                <h4>Jordan AIR JORDAN 4 RETRO</h4>
+                <h6>Sneakers</h6>
+                <h4>★★★★★</h4>
+              </div>
+              <div class="right">
+                <h4>220.00€</h4>
+                <img src="addtocart.png" alt="add to cart">
+              </div>
+            </div>
+          </div>
+          <div class="grid-item"> <!--paire 4 -->
+            <img src="PUMA%20ROUGE.jpg" alt="Puma" class="main-image"> <br>
+            <div class="grid">
+              <div class="left">
+                <h4>Puma Suede Classic XXI</h4>
+                <h6>Sneakers</h6>
+                <h4>★★★☆☆</h4>
+              </div>
+              <div class="right">
+                <h4>80.00€</h4>
+                <img src="addtocart.png" alt="add to cart">
+              </div>
+            </div>
+          </div>
+          <div class="grid-item"> <!--paire 5 -->
+            <img src="RALPH%20LAUREN%20NOIR.jpg" alt="Ralph Lauren" class="main-image"> <br>
+            <div class="grid">
+              <div class="left">
+                <h4>Polo Ralph Lauren Train 89</h4>
+                <h6>Sneakers</h6>
+                <h4>★★★★★</h4>
+              </div>
+              <div class="right">
+                <h4>149.99€</h4>
+                <img src="addtocart.png" alt="add to cart">
+              </div>
+            </div></div>
+          <div class="grid-item"> <!--paire 6 -->
+            <img src="VANS%20VERTE.jpg" alt="Vans" class="main-image"> <br>
+            <div class="grid">
+              <div class="left">
+                <h4>Vans Old skool vr3</h4>
+                <h6>Sneakers</h6>
+                <h4>★★★★★</h4>
+              </div>
+              <div class="right">
+                <h4>80.00€</h4>
+                <img src="addtocart.png" alt="add to cart">
+              </div>
+            </div>
+          </div>
+          <div class="grid-item"><!--paire 7 -->
+            <img src="TIMBERLAND%20GRIS.jpg" alt="Timberland" class="main-image"> <br>
+            <div class="grid">
+              <div class="left">
+                <h4>Timberland Pro Euro Hiker</h4>
+                <h6>Chaussure De Sécurité</h6>
+                <h4>★★☆☆☆</h4>
+              </div>
+              <div class="right">
+                <h4>149.00€</h4>
+                <img src="addtocart.png" alt="add to cart">
+              </div>
+            </div></div>
+        </section>
+      </main>
+      <footer>
+        <section class="bottom-container">
+          <h6 class="bottom-item" id="one">1</h6>
+          <h6 class="bottom-item">2</h6>
+          <h6 class="bottom-item">3</h6>
+          <h6 class="bottom-item">4</h6>
+          <h6 class="bottom-item">5</h6>
+          <h6 class="bottom-item">6</h6>
+          <h6 class="bottom-item">7</h6>
+          <h6 class="bottom-item">8</h6>
+          <h6 class="bottom-item">9</h6>
+          <h6 class="bottom-item">10</h6>
+          <img src="next.png" alt="Next page">
+        </section>
+      </footer>
+  </body>
+</html>

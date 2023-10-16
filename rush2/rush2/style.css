@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: white;
+  padding: 0 20px;
+}
+
+::selection{
+  color: #fff;
+  background: white;
+}
+
+.wrapper{
+  max-width: 450px;
+  margin: 20px auto;
+}
+
+.wrapper .search-input{
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+
+.search-input input{
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+.search-input.active input{
+  border-radius: 5px 5px 0 0;
+}
+
+.search-input .autocom-box{
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.search-input.active .autocom-box{
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.autocom-box li{
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.search-input.active .autocom-box li{
+  display: block;
+}
+.autocom-box li:hover{
+  background: #efefef;
+}
+
+.search-input .icon{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  color: blue;
+  cursor: pointer;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+nav{
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: blue;
+}
+nav .menu-btn i{
+  color: black;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: white;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: blue;
+  }
+}
+
+h2, h3, h4, span{
+  font-size: small;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px;
+  height: 100vh;
+  margin: 10px;
+  padding: 80px;
+}
+.grid-item {
+  background-color: #f0f0f000;
+  padding: 10px;
+  text-align: center;
+  width: 225px;
+  height: 300px;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.left h4 {
+  margin: 5px 0;
+}
+
+.left h6 {
+  margin: 5px 0;
+}
+
+.left img {
+  margin-top: 5px;
+  width: 80px;
+  height: 20px;
+}
+.left5{
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.right {
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+.right h4{
+  margin: 5px 0;
+}
+
+.right h6{
+  margin: 5px 0;
+}
+
+.right img {
+  margin-top: 5px;
+  width: 40px;
+  height: 40px;
+}
+.right2 img {
+  margin-top: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+.right2 {
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+.right2 h4{
+  margin: 5px 0;
+}
+
+.right2 h5{
+  margin: 5px 0;
+}
+
+.right2 img {
+  margin-top: 5px;
+  width: 20px;
+  height: 20px;
+}
+#priceRange{
+  width: 160%;
+}
+
+.filters{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid aliceblue;
+  margin-bottom: 30px;
+  width: 180%;
+}
+
+.filters2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 180%;
+}
+
+.price-range-container {
+  margin: 20px 0;
+}
+
+.slider {
+  width: 100%;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.bottom-item {
+  margin-right: 50px;
+}
+
+
+
+.bottom-container img {
+  width: 20px;
+  height: 20px;
+}
+
+#one {
+  color: white;
+  background-color: black;
+  padding: 10px;
+  display: inline-block;
+
+
+}
+
+.main-image{
+  width: 225px;
+  height: 225px;
+}
+
+.grid-item h6 {
+  font-family: 'Avenir', sans-serif;
+  color: grey;
+}
+
+.grid-item h4 {
+  font-family: 'Roboto' , sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+#gang{
+  font-family: 'Roboto' , sans-serif;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  color: grey;
+  margin-bottom: 50px;
+}
+.filters h5{
+  font-family: 'Roboto' , sans-serif;
+}
+.price-range-container{
+  font-family: 'Roboto' , sans-serif;
+}
+
+@media (max-width: 600px) {
+
+  .grid-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+      margin-right: 40%;
+
+  }
+
+  .grid-item {
+      background-color: #f0f0f000;
+
+      text-align: center;
+      width: 140%;
+  }
+
+  .main-image {
+      width: 100%;
+  }
+
+  .grid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .left {
+      text-align: left;
+      margin: 0;
+      padding: 0;
+  }
+  .left h4 {
+      margin: 5px 0;
+      margin-left: 10%;
+      font-size: 150%;
+  }
+
+  .left h6 {
+      margin: 5px 0;
+      margin-left: 10%;
+      font-size: 120%;
+  }
+
+  .left img {
+      margin-top: 5px;
+      margin-left: 5%;
+      width: 80%;
+      height: 20%;
+  }
+
+
+  .right {
+      text-align: right;
+      margin: 0;
+      padding: 0;
+  }
+
+  .right h4{
+      margin-top: 10%;
+      font-size: 150%;
+      margin-right: 10%;
+  }
+
+  .right h6{
+      margin: 5px 0;
+  }
+
+  .right img {
+      margin-top: 5px;
+      width: 50%;
+
+      height: 20%;
+  }
+
+  .filters h5{
+      font-size: 120%;
+  }
+
+  .price-range-container h5 {
+      font-size: 120%;
+  }
+
+  #gang {
+      font-size: 120%;
+  }
+}
