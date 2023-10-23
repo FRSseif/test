@@ -7,8 +7,6 @@ function checkFuel(fuel) {
         }
     });
 }
-
-// Call the checkFuel function and handle the Promise
 checkFuel(9)
     .then((message) => {
         console.log(message);

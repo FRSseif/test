@@ -9,9 +9,6 @@ function getID() {
         }, 500);
     });
 }
-
-// Do not modify what's above, write your code below
-// Don't forget to re-assign seed !
 function assignID(machineName, newSeed) {
     seed = newSeed; // re-assign seed
 
